@@ -49,7 +49,6 @@ function DisplayTodos() {
 		const edit = document.createElement('button');
 		const deleteButton = document.createElement('button');
 
-
         input.type = 'checkbox';
 		input.checked = todo.done;
 		span.classList.add('bubble');
