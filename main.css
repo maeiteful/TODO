@@ -33,6 +33,11 @@ body {
     background: var(--light);
     color: var(--dark);
 }
+.dark-mode {
+    background: rgb(0, 0, 50,0.87);
+    color: var(--light);
+}
+
 
 section {
     margin-top: 2rem;
@@ -230,4 +235,27 @@ input:checked ~ .bubble::after {
     text-decoration: line-through;
     color: var(--grey);
 }
+
+.dark-modebtn {
+    background-color: var(--dark);
+    color: var(--grey);
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+.light-modebtn {
+    background-color: var(--light);
+    color: var(--dark);
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+.dlmdiv {
+    position:absolute;
+    top:0;
+    right:0;
+}
+
 

@@ -116,3 +116,25 @@ function DisplayTodos() {
     })
 }
 
+var temp = 0;
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    if(temp%2 == 0){
+        document.getElementById("h3").style.color = "var(--light)";
+        document.getElementById("h33").style.color = "var(--light)";
+        document.getElementById("h22").style.color = "var(--light)";
+        document.getElementById("name").style.color = "var(--light)";
+        document.getElementById("DLM").className = "light-modebtn";
+        document.getElementById("DLM").innerText = "Light Mode";
+    }else {
+        document.getElementById("h3").style.color = "var(--dark)";
+        document.getElementById("h33").style.color = "var(--dark)";
+        document.getElementById("h22").style.color = "var(--dark)";
+        document.getElementById("name").style.color = "var(--dark)";
+        document.getElementById("DLM").className = "dark-modebtn";
+        document.getElementById("DLM").innerText = "Dark Mode";
+    }
+    temp +=1;
+  }
+

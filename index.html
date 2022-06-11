@@ -16,13 +16,17 @@
 <body>
     <main class="app">
 
+        <div class="dlmdiv">
+            <button class="dark-modebtn" onclick="darkMode()" id="DLM">Dark Mode</button>
+        </div>
+
         <section class="greeting">
-            <h2 class="title">
+            <h2 class="title" id="h22">
                 what's up, <input type="text" id="name" placeholder="Name Here">
             </h2>
         </section>
         <section class="create-todo">
-            <h3>CREATE A TODO</h3>
+            <h3 id="h3">CREATE A TODO</h3>
             <form id="new-todo-form">
 
                 <h4>What's on your list</h4>
@@ -52,7 +56,7 @@
         </section>
 
         <section class="todo-list">
-            <h3>TODO LIST</h3>
+            <h3 id="h33">TODO LIST</h3>
             <div class="list" id="todo-list">
                 
             </div>
